@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Futura", Futura, Helvetica, Arial, sans-serif;
+    font-size: 10px;
+}
+
+h2 {
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+[class|=button]  {
+    position: absolute;
+    top: 50%;
+}
+
+.button-left {
+    left: 5%;
+}
+
+.button-right{
+    right: 5%;
+}
+
+section {
+    position: relative;
+    width: 800px;
+    height: 300px;
+    margin: 0 auto;
+    background-color: #f5f5f5;
+}
