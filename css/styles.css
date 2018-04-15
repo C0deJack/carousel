@@ -13,37 +13,65 @@ h2 {
     text-align: center;
 }
 
-section {
+.pictureBox {
     position: relative;
-    width: 800px;
-    height: 300px;
     margin: 0 auto;
-    background-color: #f5f5f5;
+    width: 800px;
+    height: 500px;
+    background-color: #f56382;
+    overflow: hidden;
 }
 
-section div {
+/*section div {*/
+    /*position: absolute;*/
+/*}*/
+
+/*.text {*/
+    /*left: 300px;*/
+    /*top: 475px;*/
+    /*color: #ffffff;*/
+    /*font-size: 2rem;*/
+/*}*/
+
+/*img {*/
+    /*width: 100%;*/
+    /*height: 100%;*/
+/*}*/
+
+.img1 {
     position: absolute;
+    left: 0;
+    width: 800px;
+    height: 500px;
+    background-image: url("../assets/summer1.jpg");
+    background-size: contain;
+    animation: slideOut 2s ease-in-out infinite;
 }
 
-.text {
-    left: 300px;
-    top: 475px;
-    color: #ffffff;
-    font-size: 2rem;
+.img2 {
+    position: absolute;
+    left: 0;
+    width: 800px;
+    height: 500px;
+    background-image: url("../assets/autum2.jpg");
+    background-size: contain;
+    animation: slideIn 2s ease-in-out infinite;
 }
 
-img {
-    width: 100%;
-    height: 100%;
-}
+/*.picture {*/
+    /*visibility: hidden;*/
+    /*position: absolute;*/
+    /*left: 200px;*/
+/*}*/
 
-.picture {
-    visibility: hidden;
-}
+/*.visible {*/
+    /*visibility: visible;*/
+    /*animation: 2s slide;*/
+/*}*/
 
-.visible {
-    visibility: visible;
-}
+/*.slide {*/
+    /*animation: 2s slide;*/
+/*}*/
 
 
 [class|=button]  {
@@ -59,3 +87,17 @@ img {
     right: 5%;
 }
 
+/*@keyframes slide {*/
+/*0% { left: 0; }*/
+/*100% {left: 750px;}*/
+/*}*/
+
+@keyframes slideOut {
+    from { left: 0; }
+    to { left: -500px; }
+}
+
+@keyframes slideIn {
+    from { left: 500px; }
+    to { left: 0; }
+}
