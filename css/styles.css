@@ -13,6 +13,39 @@ h2 {
     text-align: center;
 }
 
+section {
+    position: relative;
+    width: 800px;
+    height: 300px;
+    margin: 0 auto;
+    background-color: #f5f5f5;
+}
+
+section div {
+    position: absolute;
+}
+
+.text {
+    left: 300px;
+    top: 475px;
+    color: #ffffff;
+    font-size: 2rem;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.picture {
+    visibility: hidden;
+}
+
+.visible {
+    visibility: visible;
+}
+
+
 [class|=button]  {
     position: absolute;
     top: 50%;
@@ -22,14 +55,7 @@ h2 {
     left: 5%;
 }
 
-.button-right{
+.button-right {
     right: 5%;
 }
 
-section {
-    position: relative;
-    width: 800px;
-    height: 300px;
-    margin: 0 auto;
-    background-color: #f5f5f5;
-}
