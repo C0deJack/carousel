@@ -5,13 +5,31 @@
     <!--<link rel="stylesheet" href="css/normalize.css" type="text/css" media="screen">-->
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="slide.js" defer></script>
     <title>Carousel</title>
 </head>
 <body>
 <h2>EXAMPLE CAROUSEL</h2>
     <section>
-        <button class="button-left"><</button>
-        <button class="button-right">></button>
+        <div class="picture one slide">
+            <img src="assets/summer1.jpg" style="width:100%">
+            <div class="text">Caption One</div>
+        </div>
+        <div class="picture two slide">
+            <img src="assets/autum2.jpg" style="width:100%">
+            <div class="text">Caption Two</div>
+        </div>
+        <div class="picture three slide">
+            <img src="assets/winter3.jpg" style="width:100%">
+            <div class="text">Caption Three</div>
+        </div>
+        <div class="picture four slide">
+            <img src="assets/spring4.jpg" style="width:100%">
+            <div class="text">Caption Four</div>
+        </div>
+
+        <button id="buttonLeft" class="button-left"><</button>
+        <button id="buttonRight" class="button-right">></button>
     </section>
 </body>
 </html>
