@@ -13,70 +13,24 @@ h2 {
     text-align: center;
 }
 
-.pictureBox {
+section {
     position: relative;
     margin: 0 auto;
-    width: 800px;
-    height: 500px;
-    background-color: #f56382;
-    overflow: hidden;
+    width: 50%;
 }
-
-/*section div {*/
-    /*position: absolute;*/
-/*}*/
-
-/*.text {*/
-    /*left: 300px;*/
-    /*top: 475px;*/
-    /*color: #ffffff;*/
-    /*font-size: 2rem;*/
-/*}*/
-
-/*img {*/
-    /*width: 100%;*/
-    /*height: 100%;*/
-/*}*/
-
-.img1 {
-    position: absolute;
-    left: 0;
-    width: 800px;
-    height: 500px;
-    background-image: url("../assets/summer1.jpg");
-    background-size: contain;
-    animation: slideOut 2s ease-in-out infinite;
-}
-
-.img2 {
-    position: absolute;
-    left: 0;
-    width: 800px;
-    height: 500px;
-    background-image: url("../assets/autum2.jpg");
-    background-size: contain;
-    animation: slideIn 2s ease-in-out infinite;
-}
-
-/*.picture {*/
-    /*visibility: hidden;*/
-    /*position: absolute;*/
-    /*left: 200px;*/
-/*}*/
-
-/*.visible {*/
-    /*visibility: visible;*/
-    /*animation: 2s slide;*/
-/*}*/
-
-/*.slide {*/
-    /*animation: 2s slide;*/
-/*}*/
 
 
 [class|=button]  {
+    font-family: "icomoon";
+    font-size: 50px;
     position: absolute;
+    z-index: 20;
     top: 50%;
+}
+
+[class|=button]:hover  {
+    color: #ffffff;
+    cursor: pointer;
 }
 
 .button-left {
@@ -87,17 +41,98 @@ h2 {
     right: 5%;
 }
 
-/*@keyframes slide {*/
-/*0% { left: 0; }*/
-/*100% {left: 750px;}*/
-/*}*/
 
-@keyframes slideOut {
-    from { left: 0; }
-    to { left: -500px; }
+.textContainer {
+    overflow: auto;
+    margin: 0 auto;
+    background-color: yellow;
 }
 
-@keyframes slideIn {
-    from { left: 500px; }
+.text {
+    font-size: 2rem;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    opacity: 0;
+    transition: opacity 1s 0s ease;
+    color: #000000;
+}
+
+.textVisible {
+    opacity: 1;
+    transition: opacity 2s 1s ease;
+}
+
+.pictureBox {
+    position: relative;
+    margin: 0 auto;
+    width: 750px;
+    height: 500px;
+    overflow: hidden;
+}
+
+[class|=img] {
+    position: absolute;
+    left: 0;
+    width: 750px;
+    height: 500px;
+    background-size: contain;
+}
+
+.img-1 {
+    background-image: url("../assets/numbered/summer1-1n.jpg");
+    z-index: 9;
+}
+
+.img-2 {
+    background-image: url("../assets/numbered/autum2-2n.jpg");
+}
+
+.img-3 {
+    background-image: url("../assets/numbered/winter3-3n.jpg");
+}
+
+.img-4 {
+    background-image: url("../assets/numbered/spring4-4n.jpg");
+}
+
+.slideInLeft {
+    animation: slideInLeft 2s ease-in-out;
+    z-index: 20;
+}
+
+.slideOutLeft {
+    animation: slideOutLeft 2s ease-in-out;
+    z-index: 10;
+}
+
+.slideInRight {
+    animation: slideInRight 2s ease-in-out;
+    z-index: 20;
+}
+
+.slideOutRight {
+    animation: slideOutRight 2s ease-in-out;
+    z-index: 10;
+}
+
+@keyframes slideOutLeft {
+    from { left: 0; }
+    to { left: -750px; }
+}
+
+@keyframes slideInLeft {
+    from { left: 750px; }
     to { left: 0; }
+}
+
+@keyframes slideInRight {
+    from { left: -750px; }
+    to { left: 0; }
+}
+
+@keyframes slideOutRight {
+    from { left: 0; }
+    to { left: 750px; }
 }
