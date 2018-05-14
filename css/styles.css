@@ -16,7 +16,6 @@ h2 {
 section {
     position: relative;
     margin: 0 auto;
-    width: 50%;
 }
 
 
@@ -77,12 +76,12 @@ section {
     left: 0;
     width: 750px;
     height: 500px;
-    background-size: contain;
+    background-size: 100% auto;
 }
 
 .img-1 {
     background-image: url("../assets/numbered/summer1-1n.jpg");
-    z-index: 9;
+    z-index: 5;
 }
 
 .img-2 {

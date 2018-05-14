@@ -11,28 +11,12 @@ var textFour = document.getElementById('text4');
 
 var currentPicture = 1;
 
-// var foo = setInterval(function() {
-//     changeCurrentPictureUp();
-//     }, 5000);
-//
-// var boo = setInterval(function() {
-//     changeCurrentPictureDown();
-// }, 5000);
-
 rightButton.addEventListener('click', function() {
-    changeCurrentPictureUp()
-    clearInterval(foo)
-    foo = setInterval(function() {
-        changeCurrentPictureUp();
-        }, 5000);
+    changeCurrentPictureDown()
 });
 
 leftButton.addEventListener('click', function() {
-    changeCurrentPictureDown()
-    clearInterval(boo)
-   boo = setInterval(function() {
-        changeCurrentPictureDown();
-    }, 5000);
+    changeCurrentPictureUp()
 });
 
 function changeCurrentPictureUp() {
